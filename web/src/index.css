@@ -1,0 +1,202 @@
+
+@font-face {
+  font-family: 'MADE TOMMY';
+  src: url('./fonts/MADE TOMMY Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MADE TOMMY';
+  src: url('./fonts/MADE TOMMY Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MADE TOMMY';
+  src: url('./fonts/MADE TOMMY ExtraBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'MADE TOMMY';
+  src: url('./fonts/MADE TOMMY Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MADE TOMMY';
+  src: url('./fonts/MADE TOMMY Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MADE TOMMY';
+  src: url('./fonts/MADE TOMMY Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MADE TOMMY';
+  src: url('./fonts/MADE TOMMY Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "MADE TOMMY";
+}
+
+.Main_Wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: white;
+}
+
+.Main_Header {
+  position: absolute;
+  width: 100%;
+  height: 8vh;
+
+  box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.3);
+  background-color: rgb(255, 255, 255);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header_Title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  margin-left: 2.5vh;
+  font-weight: bold;
+  font-size: 2.8vh;
+}
+
+.Header_User {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin-right: 2.5vh;
+  font-weight: normal;
+  font-size: 1.8vh;
+}
+
+.Header_Nav {
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+}
+
+.Nav_Item {
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  padding: 0 2vh 0 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5vh;
+  font-weight: 300;
+
+  cursor: pointer;
+  transition: .1s ease-in-out;
+
+  text-decoration: none !important;
+}
+
+.Link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.Nav_Item:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.Nav_Item_Current {
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  border-bottom: .5vh solid black;
+}
+
+.Main_Table {
+  position: absolute;
+  width: 95%;
+  height: 85%;
+
+  bottom: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: .5vh;
+}
+
+.Login_Wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(15, 15, 15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login_Form {
+  padding: 4vh 0 4vh 0;
+  height: 30vh;
+  width: 40vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: .5vh;
+  box-shadow: 0 0 1vh 0 rgba(199, 199, 199, 0.4);
+}
+
+.Login_Form span {
+  font-family: "MADE TOMMY";
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.Login_Form input {
+  margin: 1vh;
+}
+
+.Login_Container {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: fit-content;
+  height: fit-content;
+
+  width: 20%;
+}
